@@ -11,6 +11,12 @@
   <a download = "download.png" href="" onclick = "download(this);"> 다운로드하기 </a>
   <canvas id="mycanvas" width="699" height="499"></canvas>
   <script src="script.js"></script>
+  <script>
+    function download(el) {
+  const imageURI = canvas.toDataURL("image/png");
+  el.href = imageURI;
+};
+  </script>
 </body>
 
 </html>
